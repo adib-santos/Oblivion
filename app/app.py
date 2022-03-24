@@ -1,9 +1,11 @@
 from flask import Flask
 
 
-app = Flask(__name__)
-app.config.from_object('app.config')
+def create_app(): 
+    app = Flask(__name__)
+    app.config.from_object('app.config')
 
+    register_blueprints(app)
 
-return app
+    return app
 
