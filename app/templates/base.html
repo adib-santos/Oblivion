@@ -6,26 +6,24 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
         {% endblock %}
     </head>
 
     <body>
 
         <div class="nav">
-            <h1>LOGO</h1>
+            <a href="/"><h1>LOGO</h1></a>
             <ul>
-                <a href="about.html"><li>About</li></a>
-                <a href="contact.html"><li class="last">Contact</li></a>
+                <a href="about"><li>About</li></a>
+                <a href="contact"><li class="last">Contact</li></a>
             </ul>
         </div>
 
         {% block body %}
         {% endblock %}
 
-        <main>
-            <img class="big"src="static/images/big-image.png" alt="">
-        </main>
+
 
     </body>
 </html>

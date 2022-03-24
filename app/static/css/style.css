@@ -1,5 +1,5 @@
 .nav {
-    width: 100%; 
+    width: 100vw; 
     height: 60px; 
 
     display: flex; 
@@ -25,10 +25,55 @@ h1 {
     margin-left: 20px;
 }
 
-img {
-    padding-top: 120px; 
+main img {
+    margin-top: 120px; 
     display: block; 
     margin-left: auto;
     margin-right: auto; 
+    margin-bottom: 120px;
 }
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black; 
+}
+
+.container {
+    border: 2px solid black; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    position: static; 
+    left: 0; 
+    right: 0; 
+    background-color: #C4C4C4;
+    margin-bottom: 50px; 
+}
+
+/* Here I don't know how to make the boxes overflow on the top, also need to fix
+the link area that is clickable
+*/
+
+.footer {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: #C4C4C4;
+    postion: fixed; 
+
+
+}
+.mini-links {  
+    border: 2px solid black; 
+    margin: 40px 100px; 
+    padding: 60px; 
+}
+
+.socials {
+    margin: 0; 
+    padding: 0 10px; 
+}
+
 

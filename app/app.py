@@ -1,4 +1,5 @@
 from flask import Flask
+from . import simple_pages_outer
 
 
 def create_app(): 
@@ -9,3 +10,6 @@ def create_app():
 
     return app
 
+# Blueprints
+def register_blueprints(app: Flask): 
+    app.register_blueprint(simple_pages_outer.routes.blueprint)
