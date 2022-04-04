@@ -88,7 +88,6 @@ ol {
 */
 
 
-
 /* Aim box */ 
 
 .what-we-do {
@@ -97,7 +96,6 @@ ol {
     display: flex; 
     align-items: center;
     justify-content: center;
-    border: 1px solid black; 
     margin-bottom: 100px;
 
 }
@@ -130,6 +128,8 @@ main img {
 a:visited {
     color: black; 
 }
+
+
 
 .container {
     border: 2px solid black; 
@@ -168,4 +168,13 @@ the link area that is clickable
     padding: 0 10px; 
 }
 
+/*
+    USE CASES
+*/ 
 
+.use-cases-container {
+ }
+
+.img-center {
+    width: 100%;;
+}
