@@ -1,26 +1,23 @@
 from flask import Blueprint, render_template, redirect, url_for, send_file
+import time
 
 blueprint = Blueprint('simple_pages_outer', __name__)
+
+""" FIRST AR  """
 
 @blueprint.route('/')
 def index(): 
     return render_template('simple_pages/index.html')
 
-""" NAV BAR """
+""" SECOND AR  """
 
-@blueprint.route('/about')
-def about(): 
-    return render_template('/simple_pages/about.html')
+@blueprint.route('/second')
+def second(): 
+    return render_template('/simple_pages/second.html')
 
-@blueprint.route('/contact')
-def contact(): 
-    return render_template('/simple_pages/contact.html')
+""" THIRD AR  """
 
-@blueprint.route('/glossary')
-def glossary(): 
-    return render_template('/simple_pages/glossary.html')
-
-@blueprint.route('/use-cases')
-def use_cases(): 
-    return render_template('/simple_pages/use-cases.html')
+@blueprint.route('/third')
+def third(): 
+    return render_template('/simple_pages/third.html')
 
